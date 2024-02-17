@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 public class FileReader {
 
-    public Profile getDataFromFile(File file) throws IOException {
+    public Profile getDataFromFile(File file) {
         StringBuilder content = new StringBuilder();
 
         try (BufferedReader br = new BufferedReader(new java.io.FileReader(file.getAbsolutePath()))) {
